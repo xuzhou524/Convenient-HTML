@@ -18,11 +18,14 @@
 				padding: 2em .5em;
 				background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1));
 			}
-			
 			.logo {
-				height: 70px;
+				padding: 10px;
+				width: 120px;
+				height: 120px;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px;
 			}
-			
 			.title {
 				font-size: 1.5em;
 			}
@@ -60,6 +63,8 @@
 				position: relative;
 			}
 			
+			
+			
 			.screenshot {
 				position: absolute;
 			}
@@ -71,7 +76,12 @@
 			.screenshot img {
 				width: 70%;
 			}
-			
+			.bottom_footer {  
+                position: fixed; /*or前面的是absolute就可以用*/  
+                bottom: 30px;  
+                text-align: center;
+                width: 100%;
+              }
 			.icons {
 				z-index: -1;
 				position: absolute;
@@ -177,7 +187,7 @@
 			
 			@media(max-height: 600px) {
 				.logo {
-					height: 60px;
+					height: 100px;
 				}
 				.title {
 					font-size: 1.2em;
@@ -199,26 +209,31 @@
 					<a href="http://www.xzzai.com">
 						<button class="hero-button">下载<strong>v1.0.0</strong></button>
 					</a>
-					<div class="qr-wrapper hide-when-small"><img src="./Convenient-HTML_files/qr.svg" class="qr-active"><img src="./Convenient-HTML_files/yingyongbao-80.png" style="top: -35px; left: 40px;" class="qr"></div>
+					<div class="qr-wrapper hide-when-small"><img src="./Convenient-HTML_files/qr.png" class="qr-active"><img src="./Convenient-HTML_files/yingyongbao-80.png" style="top: -35px; left: 40px;" class="qr"></div>
 				</div>
-				<p class="hide-when-small text-muted share">分享到
-					<a href="https://weixin.com/" class="action qr-wrapper"><img src="./Convenient-HTML_files/weixin.svg" class="inline"><img src="./Convenient-HTML_files/weixin.png" style="top: 25px; left: -70px; transform-origin: top center; height: 150px;" class="qr"></a>
-					<a href="http://service.weibo.com/share/share.php?title=想容易,就用易&amp;url=http%3A%2F%2Fgold.xitu.io%2Fapp&amp;pic=http://www.xzzai.com" target="_blank" class="action"><img src="./Convenient-HTML_files/weibo.svg" class="inline"></a>
+                <p class="hide-when-small text-muted share">分享到:
+					<a href="https://weixin.com/" class="action qr-wrapper"><img src="./Convenient-HTML_files/weixin.png" class="inline"><img src="./Convenient-HTML_files/weixinER.png" style="top: 25px; left: -70px; transform-origin: top center; height: 150px;" class="qr"></a>
+					<a href="http://service.weibo.com/share/share.php?title=想容易,就用易&amp;url=http%3A%2F%2Fgold.xitu.io%2Fapp&amp;pic=http://www.xzzai.com" target="_blank" class="action"><img src="./Convenient-HTML_files/weibo.png" class="inline"></a>
 				</p>
 			</article>
 			<article class="text-center"><small class="text-muted">功能：简洁、优雅风格的天气</small></article>
 			<article class="screenshots">
 				<div class="screenshot ios"><img src="./Convenient-HTML_files/ios.png"></div>
 			</article>
-			<div class="icons"><img src="./Convenient-HTML_files/angularjs.svg" style="top: 13.911914142081514vh; left: 62.24947638809681vw; animation: shine 2.4869405259378254s linear infinite alternate, float 3.0309372551273555s ease-in-out infinite alternate; -webkit-animation: shine 2.4869405259378254s linear infinite alternate, float 3.0309372551273555s ease-in-out infinite alternate; width: 45.50825105281547px;"
-				class="icon"><img src="./Convenient-HTML_files/atom.svg" style="top: 6.432336270809174vh; left: 57.62326633092016vw; animation: shine 4.258495780173689s linear infinite alternate, float 4.388049436267465s ease-in-out infinite alternate; -webkit-animation: shine 4.258495780173689s linear infinite alternate, float 4.388049436267465s ease-in-out infinite alternate; width: 43.682963005267084px;"
-				class="icon"><img src="./Convenient-HTML_files/discover.svg" style="top: 33.89876759145409vh; left: 47.81130547169596vw; animation: shine 3.972972496645525s linear infinite alternate, float 2.398354543140158s ease-in-out infinite alternate; -webkit-animation: shine 3.972972496645525s linear infinite alternate, float 2.398354543140158s ease-in-out infinite alternate; width: 49.0512408898212px;"
-				class="icon"><img src="./Convenient-HTML_files/github.svg" style="top: 15.342308757826686vh; left: 57.33914490789175vw; animation: shine 3.7776794391684234s linear infinite alternate, float 3.6428005904890597s ease-in-out infinite alternate; -webkit-animation: shine 3.7776794391684234s linear infinite alternate, float 3.6428005904890597s ease-in-out infinite alternate; width: 47.90094495983794px;"
-				class="icon"><img src="./Convenient-HTML_files/html5.svg" style="top: 15.915366964181885vh; left: 67.55340015050024vw; animation: shine 5.762984276749194s linear infinite alternate, float 6.61761599755846s ease-in-out infinite alternate; -webkit-animation: shine 5.762984276749194s linear infinite alternate, float 6.61761599755846s ease-in-out infinite alternate; width: 48.00455145770684px;"
-				class="icon"><img src="./Convenient-HTML_files/ios.svg" style="top: 32.97049718094058vh; left: 14.53714175382629vw; animation: shine 2.938700469909236s linear infinite alternate, float 6.660800450947136s ease-in-out infinite alternate; -webkit-animation: shine 2.938700469909236s linear infinite alternate, float 6.660800450947136s ease-in-out infinite alternate; width: 44.57259944872931px;"
-				class="icon"><img src="./Convenient-HTML_files/sketch.svg" style="top: 22.341411901870742vh; left: 67.17680225381628vw; animation: shine 3.894884856650606s linear infinite alternate, float 5.205931041156873s ease-in-out infinite alternate; -webkit-animation: shine 3.894884856650606s linear infinite alternate, float 5.205931041156873s ease-in-out infinite alternate; width: 43.39721517637372px;"
+			
+			<div class="icons"><img src="./Convenient-HTML_files/angularjs.png" style="top: 13.911914142081514vh; left: 62.24947638809681vw; animation: shine 2.4869405259378254s linear infinite alternate, float 3.0309372551273555s ease-in-out infinite alternate; -webkit-animation: shine 2.4869405259378254s linear infinite alternate, float 3.0309372551273555s ease-in-out infinite alternate; width: 45.50825105281547px;"
+				class="icon"><img src="./Convenient-HTML_files/atom.png" style="top: 6.432336270809174vh; left: 57.62326633092016vw; animation: shine 4.258495780173689s linear infinite alternate, float 4.388049436267465s ease-in-out infinite alternate; -webkit-animation: shine 4.258495780173689s linear infinite alternate, float 4.388049436267465s ease-in-out infinite alternate; width: 43.682963005267084px;"
+				class="icon"><img src="./Convenient-HTML_files/discover.png" style="top: 33.89876759145409vh; left: 47.81130547169596vw; animation: shine 3.972972496645525s linear infinite alternate, float 2.398354543140158s ease-in-out infinite alternate; -webkit-animation: shine 3.972972496645525s linear infinite alternate, float 2.398354543140158s ease-in-out infinite alternate; width: 49.0512408898212px;"
+				class="icon"><img src="./Convenient-HTML_files/github.png" style="top: 15.342308757826686vh; left: 57.33914490789175vw; animation: shine 3.7776794391684234s linear infinite alternate, float 3.6428005904890597s ease-in-out infinite alternate; -webkit-animation: shine 3.7776794391684234s linear infinite alternate, float 3.6428005904890597s ease-in-out infinite alternate; width: 47.90094495983794px;"
+				class="icon"><img src="./Convenient-HTML_files/html5.png" style="top: 15.915366964181885vh; left: 67.55340015050024vw; animation: shine 5.762984276749194s linear infinite alternate, float 6.61761599755846s ease-in-out infinite alternate; -webkit-animation: shine 5.762984276749194s linear infinite alternate, float 6.61761599755846s ease-in-out infinite alternate; width: 48.00455145770684px;"
+				class="icon"><img src="./Convenient-HTML_files/iosIcon.png" style="top: 32.97049718094058vh; left: 14.53714175382629vw; animation: shine 2.938700469909236s linear infinite alternate, float 6.660800450947136s ease-in-out infinite alternate; -webkit-animation: shine 2.938700469909236s linear infinite alternate, float 6.660800450947136s ease-in-out infinite alternate; width: 44.57259944872931px;"
+				class="icon"><img src="./Convenient-HTML_files/sketch.png" style="top: 22.341411901870742vh; left: 67.17680225381628vw; animation: shine 3.894884856650606s linear infinite alternate, float 5.205931041156873s ease-in-out infinite alternate; -webkit-animation: shine 3.894884856650606s linear infinite alternate, float 5.205931041156873s ease-in-out infinite alternate; width: 43.39721517637372px;"
 				class="icon"></div>
 			<div id="iosWeiboTip" class="ios-weibo-tip"><img src="./Convenient-HTML_files/weibo@2x.png" class="ios-weibo-tip-img"></div>
+			<!-- Footer -->
+			<article class="bottom_footer"
+				<div><li>周周© 2015 xzzai.com 京ICP备15066712号  版权所有：周周</li></div>	
+		   </article>
 		</div>
 		<script async="" src="./Convenient-HTML_files/analytics.js"></script>
 		<script>
@@ -244,6 +259,8 @@
 			ga('create', 'UA-57015356-3', 'auto');
 			ga('send', 'pageview');
 		</script>
+		
+		
 	</body>
 
 </html>
